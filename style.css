@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5rem;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  font-size: 22px;
+  align-items: center;
+}
+.logoDiv {
+  flex: 1;
+}
+.navBarList {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+.navBarList li:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+/* MIIIIIIIDLEEEE  */
+
+.middleOfPage {
+  display: flex;
+  flex: 3;
+}
+.middleLeft {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.middleLeftImg {
+  flex: 2;
+  background-image: url(./assets/images/image-web-3-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.middleLeftTxt {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
