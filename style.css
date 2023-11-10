@@ -13,13 +13,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 5rem;
+
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 2%;
 }
 .navBar {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
+
   font-size: 22px;
   align-items: center;
 }
@@ -41,19 +42,149 @@ body {
 .middleOfPage {
   display: flex;
   flex: 3;
+  gap: 2%;
 }
 .middleLeft {
   display: flex;
-  flex: 1;
+  flex: 4;
   flex-direction: column;
+  gap: 1.5rem;
 }
-.middleLeftImg {
-  flex: 2;
-  background-image: url(./assets/images/image-web-3-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
+
+.middleLeftImg img {
+  width: 100%;
 }
 .middleLeftTxt {
   display: grid;
+  height: 100%;
   grid-template-columns: 50% 50%;
+}
+.title {
+  display: flex;
+}
+
+.readMoreDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+
+  padding-right: 5%;
+}
+.readMoreDiv div {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.readMoreDiv button {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
+
+  font-weight: 400;
+  height: 3rem;
+  width: 40%;
+  border-style: none;
+  letter-spacing: 5px;
+}
+.readMoreDiv button:hover {
+  color: hsl(36, 100%, 99%);
+}
+.middleLeftTxt h2 {
+  word-spacing: -0.2ch;
+  font-weight: 800;
+  font-size: 3rem;
+  align-self: center;
+}
+
+.middleRight {
+  flex: 1.7;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.middleRight h2 {
+  height: 10%;
+  font-size: 3rem;
+  color: hsl(35, 77%, 62%);
+}
+.middleRight ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#newBorder {
+  border-top: 0.5px solid hsl(233, 8%, 79%);
+  border-bottom: 0.5px solid hsl(233, 8%, 79%);
+}
+.newDivs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.newDivs p {
+  color: hsl(233, 8%, 79%);
+}
+.newDivs h3 {
+  padding: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+.newDivs h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.bottom {
+  flex: 1;
+
+  display: flex;
+}
+
+.btmItem {
+  display: flex;
+  gap: 6px;
+
+  height: 100%;
+  flex: 1;
+}
+
+.btmItemImg {
+  flex: 0.5;
+}
+#retroPc {
+  background-image: url(./assets/images/image-retro-pcs.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#laptop {
+  background-image: url(./assets/images/image-top-laptops.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#gaming {
+  background-image: url(./assets/images/image-gaming-growth.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btmItemText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  width: 100%;
+}
+.btmItemText h3 {
+  color: hsl(233, 8%, 79%);
+  font-size: 2rem;
+}
+.btmItemText p {
+  padding-right: 50px;
+}
+
+.listTitles:hover {
+  color: hsl(35, 77%, 62%);
 }
