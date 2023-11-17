@@ -191,6 +191,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .body {
+    width: 90%;
+  }
   .navBar {
     padding: 1rem 1rem 1rem 0;
     flex-direction: column;
@@ -209,18 +212,38 @@ body {
     display: none;
   }
   #nav-check:checked ~ .navBarList {
-    height: calc(90vh - 50px);
+    height: calc(100vh - 50px);
     color: black;
     background-color: white;
-    width: 100%;
 
-    border-bottom: 5px solid black;
+    position: absolute;
+    text-align: left;
+    padding-left: 5%;
+    width: 100%;
+    margin-left: 20%;
   }
+
   .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid black;
+  }
+  .middleOfPage {
+    flex-direction: column;
+    width: 100%;
+  }
+  .middleLeftTxt {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom {
+    padding-top: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .btmItem {
+    gap: 1rem;
   }
 }
 .nav-btn {
